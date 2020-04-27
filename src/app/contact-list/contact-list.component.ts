@@ -1,7 +1,6 @@
 import { contacts } from './../contact';
 import { userContact } from './../userContact';
 import { Component, OnInit, Input } from '@angular/core';
-import { format } from 'path';
 
 
 @Component({
@@ -28,5 +27,6 @@ export class ContactListComponent implements OnInit {
     newContact['phoneNumber']=this.newContact.phoneNumber;
     newContact['image']=this.newContact.image;
     contacts.push(newContact);
+    reset();
   }
 }
