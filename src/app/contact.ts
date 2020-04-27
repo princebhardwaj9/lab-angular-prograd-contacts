@@ -9,6 +9,13 @@ export const contacts: userContact[] = [
   },
 
   {
+    name: 'Prince Bhardwaj',
+    email: 'princebhardwaj.110@gmail.com',
+    phoneNumber: '+91-9034885110',
+    image: './assets/PRiNCE.jpg'
+  },
+
+  {
     name: 'AdaLovelace',
     email: 'Rosendo53@hotmail.com',
     phoneNumber: '1-522-714-2638 x44811',
@@ -135,5 +142,3 @@ export const contacts: userContact[] = [
   },
 
 ];
-
-

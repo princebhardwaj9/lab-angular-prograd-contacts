@@ -1,0 +1,12 @@
+.header{
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+h3{
+    padding: 20px 50px;
+}

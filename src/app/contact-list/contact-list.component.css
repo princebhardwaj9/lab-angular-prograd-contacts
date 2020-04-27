@@ -8,16 +8,59 @@ form {
 
 .contacts {
   display: flex;
-  width: 100%;
+  width: auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  /*background-color: gray;*/
 }
 
 ul {
   list-style-type: none;
 }
+
 li {
+  text-align: center;
   margin-top: 20px;
-  width: 30%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 18%;
+  border: gray solid 2px;
+  border-radius: 10px;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form div{
+  margin: 5px;
+  font-size: 20px;
+}
+
+input{
+  border-radius: 5px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+button{
+  margin-left: 45px;
+  margin-top: 5px;
+  font-size: large;
+  font-weight: 550;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: lightcoral;
+  color: white;
+}
+
+button:hover{
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+img{
+  border-radius: 50%;
 }

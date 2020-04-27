@@ -1,6 +1,7 @@
 import { contacts } from './../contact';
 import { userContact } from './../userContact';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { format } from 'path';
 
 
 @Component({
@@ -9,19 +10,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
+
   contacts: userContact[];
   newContact: any = {};
+  
   constructor() { }
 
   ngOnInit() {
   // initialize your contacts here
+    this.newContact=contacts;
   }
 
   addContact(newContact): any {
     console.log('Add contact has been called');
-     // Fill your code here
-    // add contact to contacts list
-    // clear inputs
-   
+    newContact['name']=this.newContact.name;
+    newContact['email']=this.newContact.email;
+    newContact['phoneNumber']=this.newContact.phoneNumber;
+    newContact['image']=this.newContact.image;
+    contacts.push(newContact);
   }
 }
